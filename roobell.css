@@ -3,6 +3,12 @@ body {
   margin: 0;
 }
 
+.section-header {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  text-align: center;
+}
+
 #main {
   display: flex;
 }
@@ -83,5 +89,10 @@ li {
   #title {
     padding-top: 30vh;
     font-size: 100px;
+  }
+
+  .section-header {
+    font-size: 80px;
+    text-align: initial;
   }
 }
