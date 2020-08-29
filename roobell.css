@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+strong {
+  text-transform: uppercase;
+}
+
 .section-header {
   font-family: "Playfair Display", serif;
   font-size: 36px;
@@ -79,11 +83,19 @@ li {
 
   #gallery {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .gallery-image {
+    padding: 4px;
+  }
+
+  .gallery-square {
     width: 30%;
-    padding: 4px 8px;
+  }
+
+  .gallery-portrait {
+    width: 22.3%;
   }
 
   #title {
