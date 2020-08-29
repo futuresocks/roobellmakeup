@@ -76,6 +76,13 @@ li {
   margin: 2%;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+}
+
 .gallery-image {
   height: auto;
   width: 100%;
