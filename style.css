@@ -3,15 +3,38 @@ body {
   margin: 0;
 }
 
+nav {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  padding: 10px 0;
+}
+
 strong {
   text-transform: uppercase;
   font-weight: 700;
 }
 
+section:not(:nth-of-type(1)) {
+  padding-top: 10px;
+}
+
 .section-header {
   font-family: "Playfair Display", serif;
   font-size: 36px;
-  margin: 10px 0;
   text-align: center;
 }
 
@@ -182,7 +205,6 @@ li {
   .section-header {
     font-size: 80px;
     text-align: initial;
-    margin: 20px 0;
   }
 
   #contact p {
