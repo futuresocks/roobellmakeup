@@ -104,9 +104,10 @@ li {
 #contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 14px;
   text-align: center;
+  height: 100vh;
 }
 
 .gallery-image {
