@@ -1,6 +1,69 @@
+#about {
+  margin: 20px 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#about-text-kit {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  margin: 0 14px;
+  text-align: center;
+}
+
+#gallery {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+}
+
+.gallery-image {
+  height: auto;
+  padding: 4px 0;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin: 15px 0 20px;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#icons img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  width: 50%;
+}
+
+li {
+  padding: 4px 0;
+}
+
+#main {
+  display: flex;
 }
 
 nav {
@@ -14,18 +77,24 @@ nav {
 }
 
 nav a {
-  font-size: 12px;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
   color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
   padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-strong {
-  text-transform: uppercase;
-  font-weight: 700;
+#pricing-bullets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 14px;
+}
+
+.pricing-section {
+  width: 100%;
 }
 
 section:not(:nth-of-type(1)) {
@@ -38,40 +107,20 @@ section:not(:nth-of-type(1)) {
   text-align: center;
 }
 
-#main {
-  display: flex;
-}
-
-h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 30px;
-  margin: 15px 0 20px;
-}
-
-#pricing-bullets {
-  margin: 0 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.pricing-section {
-  width: 100%;
-}
-
 #splash-image {
-  height: 100vh;
   background-image: url("https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/67776126_246041319693681_2180863265365323398_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=O3cUlxeVAmYAX9pCfGH&oh=999899c467d629b4c92ac309d5ebf28a&oe=5F70B423");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  text-align: center;
+  height: 100vh;
   margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
-li {
-  padding: 4px 0;
+strong {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #title {
@@ -82,94 +131,34 @@ li {
   padding-top: 40vh;
 }
 
-#about {
-  margin: 20px 14px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#about-text-kit {
-  display: flex;
-  flex-direction: column;
-}
-
-#gallery {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2%;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 14px;
-  text-align: center;
-  height: 100vh;
-}
-
-.gallery-image {
-  height: auto;
-  width: 100%;
-  padding: 4px 0;
-}
-
-#icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#icons img {
-  padding: 5%;
-  width: 50%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 .pricing-section:nth-child(2) h3 {
   margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
-  h3 {
-    margin: 30px 0;
-  }
-
-  .pricing-section:nth-child(2) h3 {
-    margin-top: 30px;
-  }
-
-  #splash-image {
-    background-attachment: fixed;
-  }
-
   #about {
     margin: 0 15%;
   }
 
-  #pricing {
-    margin: 0 15%;
+  #about-services-kit {
+    padding-left: 10%;
+    width: 30%;
+  }
+
+  #about-text-kit {
+    flex-direction: row;
+  }
+
+  #about-text {
+    width: 60%;
   }
 
   #contact {
     margin: 0 15%;
   }
 
-  #about-text-kit {
-    flex-direction: row;
-  }
-  #about-text {
-    width: 60%;
-  }
-
-  #about-services-kit {
-    width: 30%;
-    padding-left: 10%;
+  #contact p {
+    font-size: 20px;
   }
 
   #gallery {
@@ -189,18 +178,25 @@ li {
     width: 22.3%;
   }
 
+  h3 {
+    margin: 30px 0;
+  }
+
+  #pricing {
+    margin: 0 15%;
+  }
+
   #pricing-bullets {
     flex-direction: row;
   }
 
   .pricing-section {
-    width: 45%;
     padding: 0 10%;
+    width: 45%;
   }
 
-  #title {
-    padding-top: 30vh;
-    font-size: 100px;
+  .pricing-section:nth-child(2) h3 {
+    margin-top: 30px;
   }
 
   .section-header {
@@ -208,7 +204,12 @@ li {
     text-align: initial;
   }
 
-  #contact p {
-    font-size: 20px;
+  #splash-image {
+    background-attachment: fixed;
+  }
+
+  #title {
+    font-size: 100px;
+    padding-top: 30vh;
   }
 }
