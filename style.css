@@ -27,6 +27,7 @@ body {
   align-items: flex-start;
   background-color: black;
   display: flex;
+  height: 100vh;
   padding: 10px;
   position: relative;
   flex-direction: row;
@@ -131,11 +132,11 @@ strong {
 #swipe {
   border-radius: 50%;
   background-color: white;
-  font-size: 36px;
-  top: 8px;
-  right: 8px;
-  height: 48px;
-  width: 48px;
+  font-size: 54px;
+  top: 20px;
+  right: 20px;
+  height: 64px;
+  width: 64px;
   position: absolute;
   text-align: center;
 }
@@ -182,6 +183,7 @@ strong {
     background-color: white;
     flex-direction: row;
     flex-wrap: wrap;
+    height: auto;
     justify-content: center;
   }
 
