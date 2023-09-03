@@ -23,18 +23,21 @@ body {
   text-align: center;
 }
 
-#gallery-images {
+#gallery {
   align-items: flex-start;
+  background-color: black;
   display: flex;
+  padding: 10px;
+  position: relative;
   flex-direction: row;
-  margin: 2%;
   overflow-x: scroll;
 }
 
 .gallery-image {
+  align-self: center;
   border-radius: 10%;
-  height: 600px;
-  margin: 0 4px;
+  height: auto;
+  margin: 0 8px;
   padding: 4px 0;
   width: 100%;
 }
@@ -125,6 +128,18 @@ strong {
   text-transform: uppercase;
 }
 
+#swipe {
+  border-radius: 50%;
+  background-color: white;
+  font-size: 36px;
+  top: 8px;
+  right: 8px;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  text-align: center;
+}
+
 #title {
   color: white;
   font-family: "Playfair Display", serif;
@@ -163,7 +178,8 @@ strong {
     font-size: 20px;
   }
 
-  #gallery-images {
+  #gallery {
+    background-color: white;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
